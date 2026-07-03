@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+:root{
+    --cor_principal: #C9A227;
+    --cor_secundaria: #111111;
+    --cor_fundo: #F8F6F2;
+    --cor_texto: #2E2E2E;
+    --cor_botao01: #111111;
+    --cor_lnk_menu: #111111;
+    --cor_destaque: #8B1E3F;
+}
+
+#geral{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#cabecalho{
+    width: 100%;
+    padding: 15px 30px;
+    background: var(--cor_principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo_img img{
+    width: 300px;
+}
+
+#menu{
+    width: 350px;
+    height: 50px;
+    background: transparent;
+}
+
+#div-icones{
+    display:flex;
+    align-items:center;
+    
+}
+
+#div-icones ul{
+    display:flex;
+    gap:20px;
+    list-style: none;
+}
+
+#div-icones img{
+    width:50px;
+}
+
+#menu a:link{
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_lnk_menu);
+    font-weight: 500;
+
+}
+
+#menu a:visited{
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_botao01)
+}
+
+#menu a:active{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_destaque);
+}
+
+#pesquisa{
+    background-color: white;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pesquisa input{
+    width: 450px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: #111111;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 40px;
+    
+}
+
+.card{
+    width: 250px;
+    min-height: 350px;
+    border: solid 1px var(#C9A227);
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover{
+    transform: translatey(-5px);
+}
+
+.card h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 5px 0px;
+}
+
+.card h3{
+    margin: 20px 0px;
+}
+
+.card button{
+    width: 150px;
+    height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #111111;
+}
+
+#rodape{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E2E2E;
+}
+
+#dadosloja{
+    font-size: 0.8em;
+}
+
+#icones_sociais ul{
+    width: 25px;
+    height: 25px;
+    margin-left: 50px;
+}
+
+#icones_sociais img{
+    width: 25px;
+    height: 25px;
+}
+
+#div-cartoes img{
+    width: 25px;
+    height: 25px;
+}

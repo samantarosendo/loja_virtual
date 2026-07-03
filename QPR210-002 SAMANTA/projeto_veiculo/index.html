@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo seguro e IPVA</title>
+    <link rel="stylesheet" href="/css/style_veiculo.css">
+    
+</head>
+<body>
+    <div id="geral">
+        <h1>Cadastro de Veículo</h1>
+        <form id="formulario">
+
+        <label for="">Modelo</label>
+        <input type="text" name="modelo" id="modelo" placeholder="Informe o modelo do veículo">
+
+        <label for="">Marca</label>
+        <input type="text" name="marca" id="marca" placeholder="Informe a marca do veículo">
+
+        <label for="">Placa</label>
+        <input type="text" name="placa" id="placa" placeholder="Informe a placa do veículo">
+
+        <label for="">Ano</label>
+        <input type="number" name="ano" id="ano" placeholder="Informe o ano de fabricação do veículo">
+
+        <label for="">Valor de mercado do veículo</label>
+        <input type="number" name="mercado" id="mercado" placeholder="Informe o valor de mercado do veículo">
+
+
+        <h3>Tipo de combustível</h3>
+
+        <label for="">Gasolina</label>
+        <input type="radio" name="combustivel" value="Gasolina">
+
+        <label for="">Etanol</label>
+        <input type="radio" name="combustivel" value="Etanol">
+
+        <label for="">Bicombustíveis</label>
+        <input type="radio" name="combustivel" value="Bicombustíveis">
+
+        <label for="">Híbridos</label>
+        <input type="radio" name="combustivel" value="Hibridos">
+
+        <label for="">Elétricos</label>
+        <input type="radio" name="combustivel" value="Eletricos">
+
+        <button type="submit">Enviar cadastro</button>
+        </form>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script  src="/js/script_calculo.js"></script>
+    <script type="module" src="/js/script_veiculo.js"></script>
+</body>
+</html>
