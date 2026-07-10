@@ -12,13 +12,18 @@
 
     <!--LINK PARA O ARQUIVO-->
     <link rel="stylesheet" href="css/style_estrutura_paginas.css">
+
+    <!--LINK PARA O ARQUIVO carrega_produtos.js-->
+    <script src="/js/carrega_produtos.js" type="module" defer></script>
 </head>
+
 <body>
+
     <main id="geral">
         <header id="cabecalho">
-            <div id="logo_img">
+            <div id="logo">
                 <a href="index.html">
-                    <img src="imagens loja/icones/logo.png" alt="logo_img">
+                    <img src="imagens loja/icones/logo.png" alt="logo">
                 </a>
             </div>
 
@@ -32,11 +37,22 @@
 
             <div id="div-icones">
                 <ul>
-                    <li><a href="/paginas/login.html" class="link_icone"><img src="imagens loja/icones/login.png" alt=""></a>/li>
-                    <li><a href="/paginas/carrinho.html" class="link_icone"><img src="imagens loja/icones/carrinho.png" alt=""></a>/li>
+                    <li><a href="/paginas/login.html" class="link_icone"><img src="imagens loja/icones/login.png" alt=""></a></li>
+                    <li><a href="/paginas/carrinho.html" class="link_icone"><img src="imagens loja/icones/carrinho.png" alt=""></a></li>
                 </ul>
             </div>
         </header>
+
+        <nav id="nav-secoes">
+            <ul id="menu-secoes">
+                <li><a href="#" class="lnk-secao">Todos </a></li>
+                <li><a href="#" class="lnk-secao">Pele</a></li>
+                <li><a href="#" class="lnk-secao">Lábios</a></li>
+                <li><a href="#" class="lnk-secao">Olhos</a></li>
+                <li><a href="#" class="lnk-secao">Skin Care</a></li>
+            </ul>
+        </nav>
+
         <section id="pesquisa">
             <input type="text" name="pesquisa" id="pesquisa" placeholder="Digite seu produto">
         </section>
@@ -45,7 +61,7 @@
             <div class="card">
                 <img src="imagens loja/itens/BASE COR 01 YES SAINT LAURENT.jfif" alt="Base Yves Saint Laurent cor 01" class="img_card">
 
-                <h2 class="tito_card">Base Yves Saint Laurent cor 01</h2>
+                <h2 class="tito_card">Base Yves Saint Laurent</h2>
 
                 <h3 class="valor_card">
                     R$436,50
@@ -54,56 +70,56 @@
             </div>
 
             <div class="card">
-                <img src="imagens loja/itens/BASE COR 01 YES SAINT LAURENT.jfif" alt="Base Yves Saint Laurent cor 01" class="img_card">
+                <img src="imagens loja/itens/KIT LÁBIOS DIOR.jfif" alt="Kit lábios Dior" class="img_card">
 
-                <h2 class="tito_card">Base Yves Saint Laurent cor 01</h2>
+                <h2 class="tito_card">Kit lábios Dior</h2>
 
                 <h3 class="valor_card">
-                    R$436,50
+                    R$745,00
                 </h3>
                 <button class="btn_card">Adicionar</button>
             </div>
 
             <div class="card">
-                <img src="imagens loja/itens/BASE COR 01 YES SAINT LAURENT.jfif" alt="Base Yves Saint Laurent cor 01" class="img_card">
+                <img src="imagens loja/itens/GLOSS FENTY BEAUTY.jfif" alt="Gloss Fenty Beauty" class="img_card">
 
-                <h2 class="tito_card">Base Yves Saint Laurent cor 01</h2>
+                <h2 class="tito_card">Gloss Fenty Beauty</h2>
 
                 <h3 class="valor_card">
-                    R$436,50
+                    R$320,00
                 </h3>
                 <button class="btn_card">Adicionar</button>
             </div>
 
             <div class="card">
-                <img src="imagens loja/itens/BASE COR 01 YES SAINT LAURENT.jfif" alt="Base Yves Saint Laurent cor 01" class="img_card">
+                <img src="imagens loja/itens/KIT DE MAQUIAGEM KIKO MILANO.jfif" alt="Kit de maquiagem Kiko Milano" class="img_card">
 
-                <h2 class="tito_card">Base Yves Saint Laurent cor 01</h2>
+                <h2 class="tito_card">Kit de maquiagem Kiko Milano</h2>
 
                 <h3 class="valor_card">
-                    R$436,50
+                    R$1250,00
                 </h3>
                 <button class="btn_card">Adicionar</button>
             </div>
 
             <div class="card">
-                <img src="imagens loja/itens/BASE COR 01 YES SAINT LAURENT.jfif" alt="Base Yves Saint Laurent cor 01" class="img_card">
+                <img src="imagens loja/itens/BASE FACIAL COR 02 CHANEL.jfif" alt="Base Facial Chanel" class="img_card">
 
-                <h2 class="tito_card">Base Yves Saint Laurent cor 01</h2>
+                <h2 class="tito_card">Base Facial Chanel</h2>
 
                 <h3 class="valor_card">
-                    R$436,50
+                    R$652,25
                 </h3>
                 <button class="btn_card">Adicionar</button>
             </div>
 
             <div class="card">
-                <img src="imagens loja/itens/BASE COR 01 YES SAINT LAURENT.jfif" alt="Base Yves Saint Laurent cor 01" class="img_card">
+                <img src="imagens loja/itens/ESTOJO DE MAQUIAGEM VICTORIA´S SECRET.jfif" alt="Estojo maquiagem Victoria´s Secret" class="img_card">
 
-                <h2 class="tito_card">Base Yves Saint Laurent cor 01</h2>
+                <h2 class="tito_card">Estojo de maquiagem Victoria´s </h2>
 
                 <h3 class="valor_card">
-                    R$436,50
+                    R$550,00
                 </h3>
                 <button class="btn_card">Adicionar</button>
             </div>
@@ -118,8 +134,8 @@
 
             <div id="icones_sociais">
                 <ul>
-                    <li><a href="https:www.instagram.com/evorabeauty"><img src="imagens loja/icones/instagram.png" alt=""></a>/li>
-                    <li><a href="https:www.facebook.com/evorabeauty"><img src="imagens loja/icones/instagram.png" alt=""></a>/li>
+                    <li><a href="https:www.instagram.com/evorabeauty"><img src="imagens loja/icones/instagram.png" alt=""></a></li>
+                    <li><a href="https:www.facebook.com/evorabeauty"><img src="imagens loja/icones/instagram.png" alt=""></a></li>
                 </ul>
             </div>
 

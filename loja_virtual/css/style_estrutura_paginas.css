@@ -1,5 +1,7 @@
+/*IMPORTANDO A FONTE ROBOTO DO GOOGLE FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*ATRIBUINDO EM TODOS OS ELEMENTOS*/
 *{
     margin: 0px;
     padding: 0px;
@@ -7,80 +9,100 @@
     font-family: roboto;
 }
 
+/*CRIANDO VARIAVEIS*/
 :root{
-    --cor_principal: #B68D40;
-    --cor_botao01: #0F0F0F;
-    --cor_lnk_menu: #0F0F0F;
-    --cor_vermelha:
+    --cor_principal: #751b1b;
+    --cor_botao01: rgb(92, 9, 9);
+    --cor_lnk_menu: #e6e6e6;
+    --cor_vermelha: rgb(212, 12, 12) ;
+    --cor_suave: #6e0a0a;
+    --cor_branca: #8a1b1b;
 }
 
+/*CONFIGURANDO A TAG main*/
 #geral{
     margin: 20px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/*CONFIGURANDO O CABEÇALHO DA PAGINA*/
 #cabecalho{
     width: 100%;
     height: 200px;
     background-color: var(--cor_principal);
-    padding: 5px;
+    padding: 5px 100px;
     margin: 20px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-#logo_img{
-    width: 600px;
-    height: 250px;
+/*ALTERANDO O TAMANHO DA IMAGEM DO LOGO*/
+#logo img{
+    width: 350px;
+    height: 160px;
 }
 
+/*CONFIGURANDO A TAG NAV POR MEIO DO SEU ID*/
 #menu{
-    background-color: aliceblue;
-    width: 450px;
-    height: 100px;
+    background-color: var(--cor_principal);
+    width: 750px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#cabecalho ul{
+/*CONFIGURANDO OS LI DO UL DO CABEÇALHO NA HORIZONTAL*/
+#cabecalho ul, #menu-secoes {
     display: flex;
     list-style: none;
-    gap: 20px;
-
+    gap: 30px;
 }
 
-#div-icons img{
-    width: 20px;
+/*CONFIGURANDO OS TAMANHOS DOS ICONES*/
+#div-icones img{
+    width: 70px;
     height: 60px;
 }
 
+/*FORMATANDO OS MENUS*/
 #menu a:link{
-    font-size: 1.3em;
+    font-size: 2.3em;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--cor_lnk_menu);
-
 }
 
 #menu a:visited{
-    font-size: 1.3em;
+    font-size: 2.4em;
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--cor_botao01)
+    color: var(--cor_lnk_menu);
+}
+
+#menu a:hover{
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_botao01);
 }
 
 #menu a:active{
-    font-size: 1.3em;
+    font-size: 2.4em;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--cor_vermelha);
 }
 
+/*FORMATANDO section PELO ID PESQUISE*/
 #pesquisa{
-    background-color: blue;
-    width: 1000px;
+    background-color: var(--cor_suave);
+    width: 100%;
     height: 180px;
     display: flex;
     align-items: center;
@@ -93,4 +115,86 @@
     padding: 20px;
     border-radius: 8px;
     font-size: 2em;
+    background-color: var(--cor_lnk_menu);
+}
+
+#cards{
+    width: 1000px;
+    min-height: 600px;
+    margin: 20px 0px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    cursor:pointer;
+}
+
+.card{
+    width: 250px;
+    min-height: 250px;
+    border: solid 2px var(--cor_principal);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 100%;
+    height: 150px;
+}
+
+.card h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 10px 0px;
+}
+
+.card h3{
+    margin: 20px 0px;
+}
+
+.card button{
+    width: 100%;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: none;
+    background-color: var(--cor_suave);
+    cursor: pointer;
+}
+
+/*FORMATAÇÃO DO RODAPÉ*/
+#rodape{
+    width: 100%;
+    height: 300px;
+    background-color: var(--cor_suave);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#dadosloja{
+    font-size: 0.8em;
+}
+
+#icones_sociais ul{
+    list-style: none;
+    display: flex;
+}
+
+#icones_sociais img{
+    width: 25px;
+    height: 25px;
+    margin-left: 50px;
+}
+
+#div-cartoes img{
+    width: 25px;
+    height: 25px;
 }

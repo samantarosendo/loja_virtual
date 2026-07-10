@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évora - Carrinho</title>
+
+    <!--LINK PARA ADICIONAE O FAVICON-->
+    <link rel="shortcut icon" href="../imagem/icones/favicon.ico" type="imagem/x-icon">
+
+    <!--LINK PARA O ARQUIVO-->
+    <link rel="stylesheet" href="../css/style_estrutura_paginas.css">
+    <link rel="stylesheet" href="../css/style_carrinho.css">
+</head>
+<body>
+    <main id="geral">
+        <header id="cabecalho">
+            <div id="logo">
+                <a href="../index.html">
+                    <img src="../imagem/icones/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="../index.html" class="lnk_menu">Home</a></li>
+                    <li><a href="cadastro.html" class="lnk_menu">Cadastro</a></li>
+                    <li><a href="sobre.html" class="lnk_menu">Sobre</a></li>
+                </ul>
+            </nav>
+
+            <div id="div-icones">
+              <ul>
+                <li><a href="login.html" class="lnk-icone"><img src="../imagem/icones/login.png" alt="Login"></a></li>
+                <li><a href="carrinho.html" class="lnk-icone"><img src="../imagem/icones/carrinho.png" alt="Carrinho"></a></li>
+              </ul>
+            </div>
+        </header>
+
+        <section id="carrinho-topo">
+            <h3>Carrinho de Compras</h3>
+        </section>
+
+        <section id="carrinho-conteudo">
+            <div id="lista-itens">
+
+                <div class="item-carrinho">
+                    <img src="../imagens loja/itens/BLUSH YVES SAINT LAURENT.jfif" alt="Blush Yves Saint Laurent">
+                    <div class="item-info">
+                        <h4 class="item-nome">Blush Yves Saint Laurent</h4>
+                        <p class="item-preco-unit">R$ 500,00 / unid.</p>
+                    </div>
+                    <div class="qtd-control">
+                        <button type="button" class="btn-qtd btn-menos">-</button>
+                        <input type="number" class="qtd-item" value="1" min="1">
+                        <button type="button" class="btn-qtd btn-mais">+</button>
+                    </div>
+                    <span class="valor-item">R$ 500,00</span>
+                    <button type="button" class="btn-remover" title="Remover item">✕</button>
+                </div>
+
+                <div class="item-carrinho">
+                    <img src="../imagem/imagem04.jpg" alt="Colar de Contas">
+                    <div class="item-info">
+                        <h4 class="item-nome">Colar de Contas</h4>
+                        <p class="item-preco-unit">R$ 350,00 / unid.</p>
+                    </div>
+                    <div class="qtd-control">
+                        <button type="button" class="btn-qtd btn-menos">-</button>
+                        <input type="number" class="qtd-item" value="1" min="1">
+                        <button type="button" class="btn-qtd btn-mais">+</button>
+                    </div>
+                    <span class="valor-item">R$ 350,00</span>
+                    <button type="button" class="btn-remover" title="Remover item">✕</button>
+                </div>
+
+                <div class="item-carrinho">
+                    <img src="../imagem/imagem05.jpg" alt="Torso / Fita">
+                    <div class="item-info">
+                        <h4 class="item-nome">Torso / Fita</h4>
+                        <p class="item-preco-unit">R$ 220,00 / unid.</p>
+                    </div>
+                    <div class="qtd-control">
+                        <button type="button" class="btn-qtd btn-menos">-</button>
+                        <input type="number" class="qtd-item" value="1" min="1">
+                        <button type="button" class="btn-qtd btn-mais">+</button>
+                    </div>
+                    <span class="valor-item">R$ 220,00</span>
+                    <button type="button" class="btn-remover" title="Remover item">✕</button>
+                </div>
+
+            </div>
+
+            <aside id="resumo-carrinho">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" placeholder="Digite o CEP">
+
+                <div class="resumo-linha valor-total-box">
+                    <span>VALOR TOTAL</span>
+                    <strong>R$ 1.070,00</strong>
+                </div>
+
+                <div class="resumo-linha valor-frete-box">
+                    <span>VALOR FRETE</span>
+                    <strong>R$ 25,00</strong>
+                </div>
+
+                <div class="resumo-linha total-pagar-box">
+                    <span>TOTAL A PAGAR</span>
+                    <strong>R$ 1.095,00</strong>
+                </div>
+
+                <button type="button" id="btn-continuar">Continuar Compra</button>
+                <button type="button" id="btn-finalizar">Finalizar Compra</button>
+            </aside>
+        </section>
+
+        <footer id="rodape">
+            <div id="dadosloja">
+                <h2>Rua Otavio Cadilac, 3000 - Centro</h2>
+                <h1>Aracaju - Sergipe</h1>
+            </div>
+
+            <div id="icones_sociais">
+                <ul>
+                    <li><a href="https://www.instagram.com/seu_usario"><img src="../imagem/icones/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.x.com/seu_usario"><img src="../imagem/icones/x.png" alt="X"></a></li>
+                </ul>
+            </div>
+
+            <div id="div-cartoes">
+                <img src="../imagem/icones/hipercard.png" alt="Hipercard">
+                <img src="../imagem/icones/visa.png" alt="Visa">
+                <img src="../imagem/icones/master_card.png" alt="Mastercard">
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>
