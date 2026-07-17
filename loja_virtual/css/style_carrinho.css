@@ -183,3 +183,8 @@ body{
     background-color: #d97a2e;
     color: var(--cor_branca);
 }
+
+#div-cartoes img{
+    width: 20px;
+    height: 20px;
+}

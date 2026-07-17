@@ -11,12 +11,12 @@
 
 /*CRIANDO VARIAVEIS*/
 :root{
-    --cor_principal: #751b1b;
-    --cor_botao01: rgb(92, 9, 9);
-    --cor_lnk_menu: #e6e6e6;
-    --cor_vermelha: rgb(212, 12, 12) ;
-    --cor_suave: #6e0a0a;
-    --cor_branca: #8a1b1b;
+    --cor_principal: #a36c6c;
+    --cor_botao01: rgb(145, 96, 96);
+    --cor_lnk_menu: #ffffff;
+    --cor_vermelha: rgb(165, 113, 113) ;
+    --cor_suave: #ffffff;
+    --cor_branca: #a36c6c;
 }
 
 /*CONFIGURANDO A TAG main*/
@@ -75,7 +75,7 @@
     font-size: 2.3em;
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--cor_lnk_menu);
+    color: var(#974b4b);
 }
 
 #menu a:visited{
@@ -100,6 +100,7 @@
 }
 
 /*FORMATANDO section PELO ID PESQUISE*/
+
 #pesquisa{
     background-color: var(--cor_suave);
     width: 100%;
@@ -107,11 +108,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #pesquisa input{
-    width: 600px;
-    height: 80px;
+    width: 380px;
+    height: 60px;
     padding: 20px;
     border-radius: 8px;
     font-size: 2em;
@@ -153,6 +155,7 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     margin: 10px 0px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .card h3{
@@ -165,8 +168,13 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     border: none;
-    background-color: var(--cor_suave);
+    background-color: var(#cc9e9e);
     cursor: pointer;
+}
+
+.btn_card{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #cc9e9e;
 }
 
 /*FORMATAÇÃO DO RODAPÉ*/
@@ -177,6 +185,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.lnk-secao{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
 }
 
 #dadosloja{
@@ -195,6 +208,11 @@
 }
 
 #div-cartoes img{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+}
+
+.lnk_menu{
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
 }

@@ -2,15 +2,17 @@
 
 /*FORMATANDO SECTION formulario*/
 #formulario{
-    width: 1000px;
+    width: 935px;
     min-height: 600px;
     padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h3{
     text-align: center;
     text-transform: uppercase;
     margin: 30px 0px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 label{
@@ -18,6 +20,7 @@ label{
     margin: 20px 0px;
     text-transform: uppercase;
     letter-spacing: 5px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .input01, .input02{
@@ -25,6 +28,8 @@ label{
     border-bottom: 1px solid var(--cor_pincipal);
     font-size: 1.3em;
     padding: 5px;
+    background-color: rgb(226, 202, 202);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .input01{
@@ -37,22 +42,22 @@ label{
 
 #div-btns{
     height: 60px;
-    margin: 40px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #div-btns button{
-    width: 200px;
+    width: 150px;
     height: 40px;
-    margin-left: 20px;
-    background-color: var(--cor_suave);
+    margin-left: 10px 0px;
+    background-color: var(--cor_pincipal);
     border: none;
     text-transform: uppercase;
     cursor: pointer;
     font-size: 0.8em;
     letter-spacing: 5px;
+    border-radius: 8px;
 }
 
 .oculto{

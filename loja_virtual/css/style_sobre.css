@@ -2,7 +2,7 @@
 
 /*FUNDO SUAVE ATRÁS DO CARD, SÓ NESTA PÁGINA*/
 body{
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 
 /*CARD DA SECTION QUEM SOMOS*/
@@ -18,14 +18,19 @@ body{
 
 /*BARRA DE TÍTULO COLORIDA NO TOPO DO CARD*/
 #texto h3{
-    background-color: var(--cor_principal);
-    color: var(--cor_branca);
+    background-color: var(#692c2c);
+    color: var(#7a3c3c);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
     padding: 22px 20px;
     margin: 0px;
     font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.paragrafo{
+    font-family:'Times New Roman', Times, serif;
 }
 
 /*PARÁGRAFOS JUSTIFICADOS COM RESPIRO LATERAL*/
